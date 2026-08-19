@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="See chimerical colours — colours outside the range your eyes can normally report.">
+<title>Chimerical colours</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<input type="radio" name="c" id="c1" checked>
+<input type="radio" name="c" id="c2">
+<input type="radio" name="c" id="c3">
+<input type="radio" name="c" id="c4">
+<input type="radio" name="c" id="c5">
+<input type="radio" name="c" id="c6">
+<input type="checkbox" id="start">
+
+<main>
+  <h1>Chimerical colours</h1>
+  <p class="lede">Chimerical colours are colours you can't normally see — they sit outside the range your eyes can ordinarily report.</p>
+  <p class="tldr"><strong>How it works:</strong> staring at a strong colour fatigues the colour-sensing cells in your eye. Look away and they over-correct, leaving a ghost in the opposite colour — an afterimage. Land that ghost on the right background and the two mix into a colour that is normally impossible.</p>
+
+  <div class="palette" role="group" aria-label="Choose a colour">
+    <label for="c1"><span class="disc d1"></span><strong>Stygian blue</strong><small>a blue as dark as black</small></label>
+    <label for="c2"><span class="disc d2"></span><strong>Stygian red</strong><small>a red as dark as black</small></label>
+    <label for="c3"><span class="disc d3"></span><strong>Self-luminous red</strong><small>a red that seems to glow</small></label>
+    <label for="c4"><span class="disc d4"></span><strong>Self-luminous green</strong><small>a green that seems to glow</small></label>
+    <label for="c5"><span class="disc d5"></span><strong>Hyperbolic orange</strong><small>oranger than any real orange</small></label>
+    <label for="c6"><span class="disc d6"></span><strong>Hyperbolic green</strong><small>greener than any real green</small></label>
+  </div>
+
+  <p class="how">Press start, then keep your eyes fixed on the dot for <strong>20&nbsp;seconds</strong>. When the screen changes, keep looking at the dot — the impossible colour appears there. Blink gently if it fades.</p>
+
+  <label for="start" class="go">Start</label>
+</main>
+
+<div class="stage">
+  <label for="start" class="close" aria-label="Stop">&#10005;</label>
+  <div class="dot"></div>
+  <p class="hint">keep your eyes on the dot</p>
+  <div class="count" aria-hidden="true"></div>
+</div>
+
+</body>
+</html>
