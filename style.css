@@ -158,7 +158,7 @@ input[name="c"], #start {
 
 #start:checked ~ .stage {
   display: grid;
-  animation: swap 20s step-end forwards;
+  animation: swap 30s step-end forwards;
 }
 
 @keyframes swap {
@@ -183,7 +183,7 @@ input[name="c"], #start {
   opacity: 0;
 }
 
-#start:checked ~ .stage .hint { animation: fade 20s linear forwards; }
+#start:checked ~ .stage .hint { animation: fade 30s linear forwards; }
 
 @keyframes fade {
   0%, 15% { opacity: 1; }
@@ -204,7 +204,7 @@ input[name="c"], #start {
 @property --n {
   syntax: "<integer>";
   inherits: true;
-  initial-value: 20;
+  initial-value: 30;
 }
 
 .count {
@@ -221,11 +221,11 @@ input[name="c"], #start {
 }
 
 #start:checked ~ .stage .count {
-  animation: tick 20s linear forwards, vanish 20s step-end forwards;
+  animation: tick 30s linear forwards, vanish 30s step-end forwards;
 }
 
 @keyframes tick {
-  from { --n: 20; }
+  from { --n: 30; }
   to   { --n: 0; }
 }
 
